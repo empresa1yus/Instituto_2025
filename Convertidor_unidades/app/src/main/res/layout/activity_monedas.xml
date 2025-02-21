@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/azulOs">
+
+    <TextView
+        android:id="@+id/tvMonedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversión de Monedas"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etMonedasInput"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el monto"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:padding="10dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="40dp"
+        android:layout_marginVertical="10dp"
+        android:paddingTop="40dp">
+
+        <Button
+            android:id="@+id/btnSolesToDolares"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#0288D1"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="Soles a Dólares"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDolaresToSoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#0288D1"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="Dólares a Soles"
+            android:textColor="#FFFFFF" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvResultadoMonedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text="Resultado: "
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/money"/>
+
+</LinearLayout>
